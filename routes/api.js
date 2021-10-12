@@ -3,9 +3,9 @@ const Workout = require("../models/workout");
 const path = require("path");
 
 
-
+//get route in order to show the data of the workout
 router.get('/api/workouts', (req, res) => {
-   //assistance from ask BCS
+   //assistance from ask BCS, required an aggregate instead of a find method
     Workout.aggregate([
         {
             $addFields: {
@@ -23,8 +23,9 @@ router.get('/api/workouts', (req, res) => {
         });
 });
 
+//get route to show the range of workout used in the stats page as well to display the chart for the exercises duration
 router.get("/api/workouts/range", (req, res) => {
-//assistance from ask BCS
+   //assistance from ask BCS, required an aggregate instead of a find method
     Workout.aggregate([
         {
             $addFields: {
@@ -43,6 +44,8 @@ router.get("/api/workouts/range", (req, res) => {
 
 });
 
+
+//post route to add a workout
 router.post("/api/workouts", ({
     body
 }, res) => {
@@ -56,6 +59,7 @@ router.post("/api/workouts", ({
 });
 
 
+//put route to input data for the workout with a specific id
 router.put("/api/workouts/:id", (req, res) => {
     Workout.findOneAndUpdate({
         _id: req.params.id
@@ -74,11 +78,13 @@ router.put("/api/workouts/:id", (req, res) => {
 });
 
 
-
+//get route for the exercise page
 router.get("/exercise", function (req, res) {
     res.sendFile(path.join(__dirname, "../public/exercise.html"));
 });
 
+
+//get route for the stats page
 router.get("/stats", function (req, res) {
     res.sendFile(path.join(__dirname, "../public/stats.html"));
 });

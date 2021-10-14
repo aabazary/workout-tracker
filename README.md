@@ -41,9 +41,11 @@ You may also look at your dashboard for a couple of graphs depicting the duratio
 <p align="center" >
 <img src ="./images/dashboard.png" height=300>
 </p>
+
 ## <ins>License</ins>
 ![](https://img.shields.io/badge/License-MIT%20-blue?style=flat-square)
 
 This project is covered under MIT
+
 ## <ins>Questions</ins>
 Contact Workout Tracker at aabazary@gmail.com. Github link: https://github.com/aabazary

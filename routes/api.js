@@ -35,6 +35,7 @@ router.get("/api/workouts/range", (req, res) => {
             },
         },
     ])
+    //hw asks for last 7 workouts, had to sort descending, limit and re-sort
         .sort({ day: -1 })
         .limit(7)
         .sort({ day: 1 })

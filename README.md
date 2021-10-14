@@ -6,22 +6,44 @@ This is a Workout Tracker that utilizes MongoDB in order to store an individuals
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
-- [Features](#features)
-- [Contributions](#contributions)
-- [Tests](#tests)
 - [Questions](#questions)
 
 ## <ins>Installation</ins>
-npm i
-## <ins>Usage</ins>
+Type `npm i` or `npm install` in the integrated terminal(if all the files do not install, attempt it again)
 
+You can run the seeds with `node seeders/seed.js`
+
+Run the application with `node server.js`
+## <ins>Usage</ins>
+Link to Deployed Site:
+https://fast-badlands-44381.herokuapp.com/
+
+With this application you are capable of tracking the workouts that you do in a day. For your first entry of the day you would click "New Workout".
+
+<p align="center" >
+<img src ="./images/home.png" height=300>
+</p>
+
+As you complete an exercise, whether it is resistance or cardio, you can fill in the form and "Add Exercise". 
+
+<p align="center" >
+<img src ="./images/input.png" height=300>
+</p>
+
+Once you are completed with the workout, you can select complete, and you will be taken to a page that shows the details of your last workout. 
+
+<p align="center" >
+<img src ="./images/last_workout.png" height=300>
+</p>
+
+You may also look at your dashboard for a couple of graphs depicting the duration and weight used per day that you workout.
+
+<p align="center" >
+<img src ="./images/dashboard.png" height=300>
+</p>
 ## <ins>License</ins>
 ![](https://img.shields.io/badge/License-MIT%20-blue?style=flat-square)
+
 This project is covered under MIT
-## <ins>Features</ins>
-## <ins>Contributions
-
-## <ins>Tests</ins>
-
 ## <ins>Questions</ins>
 Contact Workout Tracker at aabazary@gmail.com. Github link: https://github.com/aabazary
